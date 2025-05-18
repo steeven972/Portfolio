@@ -1,0 +1,604 @@
+/* ================= VARIABLES ================= */
+:root {
+    --primary-color: #ecad5b;
+    --primary-color-tr: #ecad5bb5;
+    --secondary-color: #f1e6b2;
+    --secondary-color-tr: #f1e6b2b5;
+    --third-color: white;
+    --fourth-color: #ad7c3d;
+}
+
+/* ================= RESET & GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--third-color);
+    margin: 7px;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
+
+i {
+    font-size: 30px;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+a i:hover {
+    color: var(--fourth-color);
+    scale: 1.3;
+    transition: all 0.3s ease;
+}
+
+.titre {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--third-color);
+}
+
+header h2 {
+    font-size: 15px;
+    transform: translateX(40px);
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul {
+    width: 500px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= MAIN LAYOUT ================= */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= SECTION: HOME ================= */
+#home {
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--third-color);
+    background-color: var(--primary-color);
+}
+
+#home h1 {
+    font-size: 50px;
+}
+
+#home p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+#home .button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#home .button a {
+    color: var(--third-color);
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 3px solid var(--fourth-color);
+    background-color: var(--secondary-color);
+}
+
+#home .button a:hover {
+    background-color: var(--fourth-color);
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
+
+/* ================= SECTION: ABOUT ================= */
+#about {
+    height: 100vh;
+    color: var(--fourth-color);
+    background-color: var(--third-color);
+    border-top: 5px solid var(--secondary-color);
+    font-size: 24px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#about .content {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#about .content .img,
+#about .content .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .content .text {
+    flex-direction: column;
+}
+
+.text p {
+    font-size: 20px;
+    margin-top: 40px;
+    color: var(--fourth-color);
+    text-align: justify;
+}
+
+/* ================= SECTION: QUALITÉS ================= */
+#qualites {
+    width: 100%;
+    height: 45vh;
+    padding: 50px;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    border-top: 5px solid var(--secondary-color);
+}
+
+#qualites-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.qualite {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    font-weight: 600;
+    border: 3px solid var(--fourth-color);
+}
+
+/* ================= SECTION: COMPÉTENCES ================= */
+#competences {
+    width: 100%;
+    height: 120vh;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 5px solid var(--secondary-color);
+}
+
+#competences-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 55px;
+}
+
+#competences-container {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin-top: 7px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--fourth-color);
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+.CV {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CV a {
+    color: var(--fourth-color);
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+    padding: 15px 24px;
+    border-radius: 30px;
+}
+
+.CV .img {
+    width: 100%;
+    height: 75%;
+    background-image: url("Amphimaque_Steeven_CV.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+.progress {
+    display: block;
+    height: 100%;
+    background-color: var(--fourth-color);
+    border-radius: 10px;
+}
+
+/* ================= SECTION: PROJETS ================= */
+#projets {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projets-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px;
+}
+
+.projet {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+}
+.projet:hover{
+    background-color: var(--fourth-color);
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
+
+/* ================= SECTION: CONTACT ================= */
+#contact {
+    width: 100%;
+    height: 110vh;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border-radius: 40px;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+#contact-container form {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    font-size: 15px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid var(--fourth-color);
+}
+
+form div {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 50px);
+    gap: 20px;
+}
+
+#objet {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+#message {
+    height: 120px;
+    max-height: 120px;
+    min-height: 50px;
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+button[type="submit"] {
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin-top: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-data {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+@media (max-width: 600px) {
+    header nav ul {
+        width: 250px;
+    }
+    #home p{
+        font-size: 15px;
+    }
+    i{
+        font-size: 25px;
+    }
+    .titre{
+        font-size: 30px;
+    }
+    #about{
+        height: 130vh;
+    }
+    #about .content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    }
+    #about .content .text, #about .content .img {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column; 
+    }
+    #about .content .text p {
+        font-size: 15px;
+    }
+    #qualites {
+        height: 100vh;
+    }
+    #qualites-container{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #competences {
+        height: 180vh;
+    }
+    #competences-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #competences-container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .CV {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #projets {
+        height: 130vh;
+    }
+    #contact{
+        height: 150vh;
+        padding: 50px;
+    }
+    #contact-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
+    }
+    #contact-data {
+        width: 100%;
+        height: 30%;
+        margin-top: 0;
+    }
+    #contact-container form {
+        width: 100%;
+        height: 70%;
+    }
+    #message {
+        height: 200px;
+        max-height: 200px;
+        min-height: 50px;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    #about{
+        height: 150vh;
+    }
+    #about .content {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    }
+     #about .content .text, #about .content .img {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column; 
+    }
+    #qualites {
+        height: 110vh;
+    }
+    #qualites-container{
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #competences {
+        height: 180vh;
+    }
+    #competences-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #competences-container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .CV {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        height: 150vh;
+        padding: 50px;
+    }
+    #contact-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
+    }
+    #contact-data {
+        width: 100%;
+        height: 30%;
+        margin-top: 0;
+    }
+    #contact-container form {
+        width: 90%;
+        height: 70%;
+    }
+    #message {
+        height: 200px;
+        max-height: 200px;
+        min-height: 50px;
+    }
+}
