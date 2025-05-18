@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Steeven <br>Amphimaque</h2>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Steeven Amphimaque</h1>
+            <p>Full stack developper - Software developper</p>
+            <div>
+                <a href="https://github.com/steeven972"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                
+                
+                
+               
+            </div>
+            <div class="button">
+                <a href="#about">Qui suis-je ?</a>
+                <a href="#View">Portfolio</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="titre">Présentation</h2>
+            <div class="content">
+                <div class="img">
+                
+                </div>
+                <div class="text">
+                    <p> 
+                        Hello ! Je m’appelle Steeven Amphimaque, étudiant en informatique passionné par les technologies numériques.
+
+                        Curieux et motivé, j'ai toujours aimé comprendre comment fonctionnent les choses. Avant même mes études, je me formais déjà de façon autodidacte au développement et à la cybersécurité. Aujourd’hui, j’étudie l’informatique au CNAM de Chalon-sur-Saône tout en menant plusieurs projets personnels, notamment en développement web et en programmation de jeux.
+
+                        Grâce à des expériences variées en projets d’équipe, concours et création logicielle, j’ai appris à être rigoureux, autonome, et à toujours chercher à progresser. En parallèle, j’ai suivi une formation à la création d’entreprise, ce qui a renforcé mon sens de l’organisation et de l’initiative. 
+
+                        Je suis actuellement à la recherche d’une alternance en tant que développeur full stack pour 2025, avec l’envie de continuer à apprendre aux côtés de professionnels passionnés, tout en apportant mon énergie et ma créativité.
+                    </p>
+                    
+                </div>
+               
+            </div>
+           
+        </section>
+       
+        <section id="qualites">
+            <h2 class="titre">Mes qualités</h2>
+            <div id="qualites-container">
+                
+            </div>
+        </section>
+        <section id="competences">
+            <h2 class="titre">Competences</h2>
+            <div id="competences-content">
+                <div id="competences-container">
+
+                    <h3>Compétence level</h3>
+                   
+                </div>
+                <div class="CV">
+                    <div class="img"></div>
+                    <a href="Amphimaque_Steeven_CV_Alternance.pdf" download>Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
+
+         <section id="projets">
+            <h2 class="titre">Mes projets</h2>
+            <div id="projets-container">          
+              <div class="projet"></div>
+              <div class="projet"></div>
+              <div class="projet"></div>
+            </div>
+           
+        </section>
+
+        <section id="contact">
+            <h2 class="titre">Me contacter</h2>
+            <div id="contact-container">
+                 <div id="contact-data">
+                    <a href=" https://api.whatsapp.com/send?phone=330667731116&text=Hello"><i class="fa-brands fa-whatsapp"></i></a><label for="tel">+33 6 67 73 11 16</label>
+                    <a href="mailto:steevenamphimaque07@gmail.com"><i class="fa-solid fa-envelope"></i></a><label for="email">steevenamphimaque07@gmail.com</label>
+                </div>
+                <form action="/send-email" method="POST">
+                    <div>
+                        <input type="text" name="name" placeholder="Nom" id="name" required>
+                        <input type="text" name="prenom" placeholder="Prénom" id="prenom" required>
+                        <input type="email" name="email" placeholder="Email" id="email" required>
+                        <input type="text" name="tel" placeholder="Téléphone" id="tel" required>
+                        <input type="text" name="objet" placeholder="Objet" id="objet" required>
+                        <textarea name="message" rows="5" placeholder="Message" id="message"></textarea>
+                    </div>
+                    
+                    <button type="submit">Envoyer</button>
+                </form>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Steeven Amphimaque. Tous droits réservés.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
